@@ -1,6 +1,6 @@
 replicaCount: 2
 image:
-  repository: manuja427/dockertestrepo:backend-image
+  repository: manuja427/dockertestrepo:backend-image:latest
   pullPolicy: IfNotPresent
 service:
   type: ClusterIP
