@@ -1,6 +1,6 @@
 replicaCount: 2
 image:
-  repository: gcr.io/project-container-432002/frontend-image
+  repository: manuja427/dockertestrepo:frontend-image
   pullPolicy: IfNotPresent
 service:
   type: LoadBalancer
