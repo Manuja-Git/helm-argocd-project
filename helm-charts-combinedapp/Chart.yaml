@@ -1,0 +1,4 @@
+apiVersion: v2
+name: combined-app
+description: A Helm chart to deploy both backend and frontend applications
+version: 0.1.0

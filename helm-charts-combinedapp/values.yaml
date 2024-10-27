@@ -1,0 +1,19 @@
+backend:
+replicaCount: 2
+image:
+  repository: manuja427/dockertestrepo:backend-image
+  pullPolicy: IfNotPresent
+service:
+  type: ClusterIP
+  port: 5000
+
+
+frontend:
+replicaCount: 2
+image:
+  repository: manuja427/dockertestrepo:frontend-image
+  pullPolicy: IfNotPresent
+service:
+  type: LoadBalancer
+  port: 80
+  targetPort: 3000
