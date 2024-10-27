@@ -5,4 +5,4 @@ image:
 service:
   type: LoadBalancer
   port: 80
-  targetPort: 300
+  targetPort: 3000
