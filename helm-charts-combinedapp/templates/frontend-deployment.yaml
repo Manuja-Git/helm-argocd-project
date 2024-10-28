@@ -16,5 +16,5 @@ spec:
       - name: frontend
         image: manuja427/dockertestrepo:frontend-image
         ports:
-        - containerPort: 80
+        - containerPort: 3000
 
