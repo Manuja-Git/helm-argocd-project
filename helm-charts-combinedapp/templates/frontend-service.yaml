@@ -3,10 +3,10 @@ kind: Service
 metadata:
   name: frontend-service
 spec:
-  type: {{ .Values.frontend.service.type }}
+  type: {{ .values.frontend.service.type }}
   selector:
     app: frontend
   ports:
     - protocol: TCP
-      port: {{ .Values.frontend.service.port }}
-      targetPort: {{ .Values.frontend.service.targetPort }}
+      port: {{ .values.frontend.service.port }}
+      targetPort: {{ .values.frontend.service.targetPort }}
