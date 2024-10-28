@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: "{{ .Values.image.repository }}"
+        image: manuja427/dockertestrepo:backend-image
         ports:
         - containerPort: {{ .Values.service.port }}
         

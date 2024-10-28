@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: "{{ .Values.image.repository }}"
+        image: manuja427/dockertestrepo:frontend-image
         ports:
         - containerPort: {{ .Values.service.targetPort }}
 
