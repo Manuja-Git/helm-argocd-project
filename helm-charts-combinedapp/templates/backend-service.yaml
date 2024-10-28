@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: backend
 spec:
-  type: {{ .Values.backend.service.type }}
+  type: ClusterIP
   ports:
   - port: {{ .Values.service.port }}
     targetPort: {{ .Values.service.port }}
