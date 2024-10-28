@@ -3,10 +3,10 @@ kind: Service
 metadata:
   name: frontend
 spec:
-  type: LoadBalancer
+  type: {{ .Values.frontend.service.type }}
   ports:
-  - port: 80
-    targetPort: 3000
+  - port: {{ .Values.frontend.service.port }}
+    targetPort: {{ .Values.frontend.service.targetPort }}
   selector:
     app: frontend
 
